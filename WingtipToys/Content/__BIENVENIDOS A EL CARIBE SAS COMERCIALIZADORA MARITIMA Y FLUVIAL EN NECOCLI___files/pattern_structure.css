@@ -1,0 +1,551 @@
+/*---------------------pattern_1 menu horizntal-----------------------------*/
+*{margin:0;padding:0;}
+body{
+    font-family: "trebuchet ms","Verdana","Arial";
+    font-weight:lighter;
+}
+img{vertical-align: top !important;}
+table{
+    vertical-align: top;
+    border-collapse: collapse;
+}
+.pattern_mn-content{width: 100%;}
+.malla{width: 100%;position:absolute;top:0;}
+.pattern_content{width: 900px !important;min-height:600px !important;margin:10px auto;}
+.pattern_header{
+    position:relative;
+    z-index:2;
+    width:100%;
+}
+.pattern_logo{
+    width:100%;
+    height:90px;
+    padding:5px 0;
+}
+.pattern_elements{
+    width: 80%;
+    min-height: 560px;
+    margin:0 auto;
+}
+.pattern_elements.basic{width: 90%;}
+.pattern_elements.basic  tr td span.fch_name{
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fringe{height: 25px;}
+.contact_info{width: 90% !important;margin:0 auto;}
+.contact_info tr td{font-size:14px;text-align: left !important;}
+/*.pattern_body-copy{width: 80%;}*/
+.txt{
+    padding:5px 10px;
+    max-height: 250px;
+    overflow-x:auto; 
+    /*border:solid 1px;*/
+}
+.web .txt{
+  max-height: inherit;
+}
+.pattern_banner{
+    width:100%;
+    height:250px;
+    background:#999999;
+}
+.pattern_banner{
+  width:100%;
+  height:260px;
+  background: white;
+  overflow: hidden;
+}
+.pattern_banner ul {
+  display: block;
+  position: relative;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pattern_banner ul li{
+  display: inline-block;
+  position: absolute;
+  list-style: none;
+  font-size: 14px;
+  width: 100%;
+}
+.pattern_banner.diag ul li{
+  width: 110%;
+}
+.pattern_banner ul li img{
+  width: 100%;
+}
+/*-------------------------Pattern menu vertical-------------------------------------*/
+.menu.m_vertical {
+  vertical-align: top;
+  margin-top:30px;
+  display: inline-block;
+  width: 25%;
+}
+.m_vertical label{
+  display: block;
+}
+.m_vertical li{
+  width:100%;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+}
+.menu.m_vertical ~.pattern_body-copy{
+  vertical-align: top;
+  display: inline-block;
+  width: 68%;
+}
+.edgeLoad-detur-1 { visibility:hidden !important; }
+input[type="radio"] ~ div div.pattern_banner1,
+input[type="radio"] ~ div div.pattern_banner2,
+input[type="radio"] ~ div div.pattern_banner3,
+input[type="radio"] ~ div div.pattern_banner4,
+input[type="radio"] ~ div div.pattern_banner5,
+input[type="radio"] ~ div div.pattern_banner6,
+input[type="radio"] ~ div div.pattern_banner7,
+input[type="radio"] ~ div div.pattern_banner8,
+input[type="radio"] ~ div div.pattern_banner9,
+input[type="radio"] ~ div div.pattern_banner10{
+    width:100%;
+    height:250px;
+    background:#999999;
+    display: none !important;
+}
+input#menu1:checked ~ div div.pattern_banner1,
+input#menu2:checked ~ div div.pattern_banner2,
+input#menu3:checked ~ div div.pattern_banner3,
+input#menu4:checked ~ div div.pattern_banner4,
+input#menu5:checked ~ div div.pattern_banner5,
+input#menu6:checked ~ div div.pattern_banner6,
+input#menu7:checked ~ div div.pattern_banner7,
+input#menu8:checked ~ div div.pattern_banner8,
+input#menu9:checked ~ div div.pattern_banner9,
+input#menu10:checked ~ div div.pattern_banner10{
+    display: block !important;
+}
+.menu{width:100%;}
+.menu ul{width:100%;text-decoration:none;}
+.menu ul label li{
+    display:inline-block;
+    padding:0.9%;
+    margin: 0 -5px 0 0; 
+    border:solid 1px transparent;
+    cursor:pointer;
+}
+/*.menu.pt1 ul li{
+    margin: 0 !important;       
+}*/
+.menu ul li:hover,
+input#menu1:checked ~ div div.menu ul label[for=menu1] li,
+input#menu2:checked ~ div div.menu ul label[for=menu2] li,
+input#menu3:checked ~ div div.menu ul label[for=menu3] li,
+input#menu4:checked ~ div div.menu ul label[for=menu4] li,
+input#menu5:checked ~ div div.menu ul label[for=menu5] li,
+input#menu6:checked ~ div div.menu ul label[for=menu6] li,
+input#menu7:checked ~ div div.menu ul label[for=menu7] li,
+input#menu8:checked ~ div div.menu ul label[for=menu8] li,
+input#menu9:checked ~ div div.menu ul label[for=menu9] li,
+input#menu10:checked ~ div div.menu ul label[for=menu10] li{
+    display:inline-block;
+}
+input#menu1:checked ~ div div.menu ul label[for=menu1] li:after,
+input#menu2:checked ~ div div.menu ul label[for=menu2] li:after,
+input#menu3:checked ~ div div.menu ul label[for=menu3] li:after,
+input#menu4:checked ~ div div.menu ul label[for=menu4] li:after,
+input#menu5:checked ~ div div.menu ul label[for=menu5] li:after,
+input#menu6:checked ~ div div.menu ul label[for=menu6] li:after,
+input#menu7:checked ~ div div.menu ul label[for=menu7] li:after,
+input#menu8:checked ~ div div.menu ul label[for=menu8] li:after,
+input#menu9:checked ~ div div.menu ul label[for=menu9] li:after,
+input#menu10:checked ~ div div.menu ul label[for=menu10] li:after{
+    display:inline-block;
+    text-align:center;
+    line-height:0;
+    margin:-10px;
+    width:100%;
+    position:relative;
+    top:15px;
+}
+input ~ div div.pattern_body-copy,
+input ~ div div.static_content div.pattern_body-copy{
+    padding:0;
+    position:absolute;
+    z-index:1;
+    height:0;
+    overflow:hidden;
+}
+.pan_tabs{width: 100%;}
+.pan_tabs ul li{ 
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    color:#666666;
+    background: #dddddd;
+    margin:0 -1px -1px 0;
+    border: solid 1px #999999;
+    border-bottom-color:#666666;  
+}
+.pan_tabs ul li:hover,.pan_tabs ul li.on{ 
+    color:#333333;
+    background: white;
+    cursor:pointer;
+}
+.pan_tabs ul li.on{
+    border-bottom-color:white;
+    position: relative;
+    z-index: 1;
+}
+.pan{
+    border: solid 1px #666666;
+    padding: 5px;
+    background-color: white;
+}
+.pan.hid{display: none;}
+.pattern_body-copy hr{
+    border:0;
+    height: 2px;
+    margin-top:3px;
+    background-color: #ffffff;
+}
+.pano_content{
+    width: 100%;
+}
+.imgs_content{
+    text-align:center;
+    margin:0 auto;
+}
+.imgs_content a{
+    display: inline-block;
+    width: 49%;
+    margin:2px;
+    overflow: hidden;
+    border:solid 2px #000000;
+    height:250px !important;
+    vertical-align: top;
+}
+/*.imgs_content a:before{
+    content: attr(title);
+    display: block;
+    position: absolute;
+    background:url("../../imgs/default/dark_80p.png");
+    color:white;
+    padding: 0.5%;
+    transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+}
+.imgs_content a:hover:before{
+    padding: 1%;
+    transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+}*/
+/*-------imgs tamaño por pauta-------*/
+.pt1 a{
+    width: 100% !important;
+    height:400px !important;
+}
+.pt2 a{
+    width: 48% !important;
+    height:220px !important;
+}
+.pt3 a{
+    width: 48% !important;
+    height:220px !important;
+    overflow: hidden;
+}
+input#menu1:checked ~ div div#copy1,
+input#menu2:checked ~ div div#copy2,
+input#menu3:checked ~ div div#copy3,
+input#menu4:checked ~ div div#copy4,
+input#menu5:checked ~ div div#copy5,
+input#menu6:checked ~ div div#copy6,
+input#menu7:checked ~ div div#copy7,
+input#menu8:checked ~ div div#copy8,
+input#menu9:checked ~ div div#copy9,
+input#menu10:checked ~ div div#copy10,
+input#sb_mn1:checked ~ div div div#sb_copy1,
+input#sb_mn2:checked ~ div div div#sb_copy2,
+input#sb_mn3:checked ~ div div div#sb_copy3,
+input#sb_mn4:checked ~ div div div#sb_copy4{
+    padding:3%;
+    min-height:320px;
+    height:auto !important;
+    position:relative;
+    z-index:10;
+    margin-bottom:10px;
+    overflow:inherit !important;
+}
+.pattern_footer{
+    height:50px;
+    width:98%;
+    margin-top:-9px; 
+    max-width:900px;
+    padding:1%;
+}
+.pattern_footer .cntnt_ft{
+    width:100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size:15px;
+    line-height: 17px;
+    text-align: center;
+}
+.pattern_form table{
+    width:90%;
+}
+.pattern_form table tr td:first-child{
+    width:30%;
+    text-align:center;
+    vertical-align:top;
+    margin:0 auto;
+}
+.pattern_form table tr td:first-child p{
+    width:90%;
+    font-size:12px;
+}
+.pattern_form table tr td:first-child p img{
+    width:100%;
+    min-height:150px;
+}
+.pattern_form fieldset{
+    width:100%;
+    border:solid 1px #666666;
+    padding:2%;
+}
+.pattern_form fieldset legend{
+    font-size:18px;
+    padding:5px;
+    font-weight:bolder;
+}
+.pattern_form fieldset input[type="text"],.pattern_form fieldset textarea{
+    width:96%;
+    padding:5px;
+    margin-bottom:5px;
+    border:solid 1px #999999;
+}
+.pattern_form fieldset input[type="submit"]{cursor:pointer;padding:5px;}
+/*----------------------------------------------------------------------*/
+/*--------------------pattern_2 menu vertical--------------------------*/
+.st2 .menu{
+    float:left;
+    width:20%;
+    min-height:145px;
+    padding:0;
+    position: relative;
+    z-index: 10; 
+}
+.st2 .pattern_logo{
+    height: 60px;
+    background-position: center bottom;
+}
+.st2 .menu ul label li{
+    width:96%;
+    border-bottom-color:white;
+    padding:1px 3px;   
+}
+.st2 .pattern_banner{
+    margin-left:20%;
+}
+.st2 .imgs_content a{
+    height:200px;
+}
+
+.st2 input#menu1:checked ~ div div.menu ul label[for=menu1] li:after,
+.st2 input#menu2:checked ~ div div.menu ul label[for=menu2] li:after,
+.st2 input#menu3:checked ~ div div.menu ul label[for=menu3] li:after,
+.st2 input#menu4:checked ~ div div.menu ul label[for=menu4] li:after,
+.st2 input#menu5:checked ~ div div.menu ul label[for=menu5] li:after,
+.st2 input#menu6:checked ~ div div.menu ul label[for=menu6] li:after,
+.st2 input#menu7:checked ~ div div.menu ul label[for=menu7] li:after{
+    content:"\25C4";
+    float:right;
+    width:auto !important;
+    margin-right:-6px;
+    line-height:12px !important;
+    text-align:center;
+    border-bottom:0;
+}
+.st2 .menu ul li:hover,
+.st2 input#menu1:checked ~ div div.menu ul label[for=menu1] li,
+.st2 input#menu2:checked ~ div div.menu ul label[for=menu2] li,
+.st2 input#menu3:checked ~ div div.menu ul label[for=menu3] li,
+.st2 input#menu4:checked ~ div div.menu ul label[for=menu4] li,
+.st2 input#menu5:checked ~ div div.menu ul label[for=menu5] li,
+.st2 input#menu6:checked ~ div div.menu ul label[for=menu6] li,
+.st2 input#menu7:checked ~ div div.menu ul label[for=menu7] li{
+    display:inline-block;
+    background:url("../../imgs/default/degrade_light_up_down.png") repeat-x bottom;
+}
+.st2 .pattern_banner{
+   width:80%;
+   height: 180px;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------pauta tipo 2--------------------------------*/
+
+.st3 .img_fachada{
+   width: 100%;
+   margin:7px;
+   overflow: hidden;
+   border-radius: 10px;
+   vertical-align: top;
+}
+.st3 .img_fachada img{width: 100%;}
+.st3 .txt{max-height:200px !important;}
+.st3 .pattern_content{width: 900px !important;}
+.st3 .pattern_body-copy > table tr td:first-child{
+    width:25%;
+    vertical-align: middle;
+    padding-right: 20px;
+    /*border-right:solid thin rgba(255,255,255,0.3);*/
+    /*text-align:center;*/
+}
+.st3 .info_fachada{padding-left: 10px;}
+.st3 .info_fachada table{width: 100% !important;}
+.st3 .info_fachada table tr td{border:none !important;}
+.st3 .pattern_footer{
+    position:relative;
+    margin:0 auto;
+    width:98%;
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------template 5------------------------------------*/
+.pattern_mn-content.st4{width: 100%;}
+.st4 .pattern_content{}
+.st4 .pattern_body-copy{padding: 2%;}
+.st4 .pattern_body-copy .txt{min-height: 25px}
+.st4 .imgs_content{width: 90%;}
+.st4 .pattern_body-copy a:first-child:after{display: none !important;}
+.st4 .ft{text-align: center;font-size: 15px;}
+.st4 .ft hr{height: 1px;border:0;}
+
+/*---------------------------------------------------------------------*/
+/*-----------------mensajes emergentes---------------------------------*/
+.emergent{
+    text-align:center;
+    padding:2px 2px 4px 2px;
+    font-size:12px;
+    height:0;
+    display: none;
+    line-height:20px;
+    overflow:hidden;
+}
+.emergent span{
+    display:inline-block;
+    float:left;
+}
+.good{
+    display: block;
+    background-color:#9dd39d;
+    border:solid 1px green;
+    color:green;
+    height:auto;
+    overflow:inherit;
+}
+.good img{
+    width:20px;
+    border:solid 1px green;
+}
+.wrong{
+    display: block;
+    background-color:yellow;
+    border:solid 1px #c90000;
+    color:#333333;
+    height:auto;
+    overflow:inherit;
+}
+.wrong img{
+    width:20px;
+    border:solid 1px #c90000;
+}
+/*---------------------------------------------------------------------*/
+/*--------------------------footer ander-------------------------------*/
+.ander{
+    width:100%;
+    text-align: right;
+    font-size:10px;
+    line-height: 5px;
+    color:#999999;
+    margin-top: 5px;
+    padding:0;
+}
+.ander a{color:#cccccc;}
+.ander a.and{color:#F5E2A0;}
+.ander a.and:hover{color:#86C0F1 ;}
+/*----------------------gallery style-------------------------*/
+#viewer{
+    display: inline-block;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url("../../imgs/default/dark_80p.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.vwr-screen{
+    margin: 10% auto;
+    display: inline-block;
+    border:solid 5px white;
+    background-color: white;
+    -webkit-transition:all 0.5s ease-in;
+    -moz-transition:all 0.5s ease-in;
+    -o-transition:all 0.5s ease-in;
+    -ms-transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
+}
+.vwr-screen.shw, .vwr-screen.shw img{
+    max-width: 100%;
+    opacity: 1;
+    vertical-align: middle !important;
+    -webkit-transition:all 0.5s ease-in;
+    -moz-transition:all 0.5s ease-in;
+    -o-transition:all 0.5s ease-in;
+    -ms-transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
+}
+.vwr-screen.shw img{max-height: 100%;}
+.vwr-screen.blck{
+    opacity:0;
+    -webkit-transition:all 0.5s ease-in;
+    -moz-transition:all 0.5s ease-in;
+    -o-transition:all 0.5s ease-in;
+    -ms-transition:all 0.5s ease-in;
+    transition:all 0.5s ease-in;
+}
+#close{
+    display: inline-block;
+    margin-left:-20px;
+    float: right;
+    position: relative;
+    cursor:pointer;
+    padding: 0px 5px 5px 5px;
+    line-height: 0;
+    background-color: white;
+}
+#close:hover{background: #cccccc;color:white;text-shadow:1px 1px 2px #999999;}
+#close:before{
+    content:"x";
+    line-height: 17px;
+    font-weight: bold;
+}
+.loadgall{
+    display:block;
+    width: 50px;
+    z-index: -1;
+    top:49%;
+    left: 49%;
+    background: url("../../imgs/default/loading.gif") no-repeat center;
+    position: absolute;
+    height: 50px;
+}

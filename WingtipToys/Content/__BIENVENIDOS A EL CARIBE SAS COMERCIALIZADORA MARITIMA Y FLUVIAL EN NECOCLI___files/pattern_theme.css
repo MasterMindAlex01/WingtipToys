@@ -1,0 +1,65 @@
+/*---------------------pattern_1 menu horizntal-----------------------------*/
+body{font-family: "trebuchet ms","Verdana","Arial";background:#1155cc;background-size:100% auto;}
+.pattern_mn-content{}
+.pattern_content{background:#ffd966;}
+.pattern_logo{background:url(../../imgs/patterns_imgs/patterns_necocli/elcaribesascomercializadoramaritimayfluvial/theme/img_thm_cabecera_comercializadora.png) no-repeat left bottom;}
+.menu,ul.sb_mn{background:#ffd966;}
+.menu ul{color:#000000;text-align:left;}
+.menu ul label li,ul.sb_mn label li{background:^1^1^1^1^1;}
+.pattern_fachada{background:^1^1^1^1^1;color:^1^1^1^1^1;}
+.pattern_header .menu ul label li:hover,
+ul.sb_mn label li:hover,
+input#menu1:checked ~ div div.menu ul label[for=menu1]>li,
+input#menu2:checked ~ div div.menu ul label[for=menu2]>li,
+input#menu3:checked ~ div div.menu ul label[for=menu3]>li,
+input#menu4:checked ~ div div.menu ul label[for=menu4]>li,
+input#menu5:checked ~ div div.menu ul label[for=menu5]>li,
+input#menu6:checked ~ div div.menu ul label[for=menu6]>li,
+input#menu7:checked ~ div div.menu ul label[for=menu7]>li,
+input#menu8:checked ~ div div.menu ul label[for=menu8]>li,
+input#menu9:checked ~ div div.menu ul label[for=menu9]>li,
+input#menu10:checked ~ div div.menu ul label[for=menu10]>li{border-color:;background:#0000ff;color:;}
+.m_horizontal label li a{color:;}
+.m_horizontal label li a:hover{color:;}
+
+input#menu1:checked ~ div div#copy1,
+input#menu2:checked ~ div div#copy2,
+input#menu3:checked ~ div div#copy3,
+input#menu4:checked ~ div div#copy4,
+input#menu5:checked ~ div div#copy5,
+input#menu6:checked ~ div div#copy6,
+input#menu7:checked ~ div div#copy7,
+input#menu8:checked ~ div div#copy8,
+input#menu9:checked ~ div div#copy9,
+input#menu10:checked ~ div div#copy10{background:;}
+.pattern_body-copy{color:;}
+.pattern_body-copy a{text-decoration:none;color:;}
+.pattern_body-copy a:hover{text-decoration:underline;}
+.txt{color:;}
+.pattern_footer,.ft{background:#0000ff;}
+.pattern_footer .cntnt_ft{color:#ffffff !important;}
+.cntnt_ft{color:#ffffff !important;}
+.st4 .ft hr{background:#ffffff !important;color:#ffffff !important;border-color:#ffffff !important;}
+.pattern_footer .cntnt_ft a{text-decoration:none;color:#ffffff;}
+.pattern_footer .cntnt_ft a:hover{text-decoration:underline;}
+
+
+/*----------------------------------------------------------------------*/
+
+/*--------------------pattern_2 menu vertical--------------------------*/
+
+.st2 .menu ul li:hover, 
+.st2 input#menu1:checked ~ div div.menu ul label[for=menu1] li,
+.st2 input#menu2:checked ~ div div.menu ul label[for=menu2] li,
+.st2 input#menu3:checked ~ div div.menu ul label[for=menu3] li,
+.st2 input#menu4:checked ~ div div.menu ul label[for=menu4] li,
+.st2 input#menu5:checked ~ div div.menu ul label[for=menu5] li,
+.st2 input#menu6:checked ~ div div.menu ul label[for=menu6] li,
+.st2 input#menu7:checked ~ div div.menu ul label[for=menu7] li{
+    border:solid 1px ;
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------complements---------------------------*/
+.fringe{background:;}

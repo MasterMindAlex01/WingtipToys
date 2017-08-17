@@ -1,0 +1,124 @@
+/*---------------------------------------------
+options of animations deturismoporantioquia.com
+list of animation availables:
+- upAndFade
+- FadeInOut
+- diagUpAndFade
+- slideLeft
+----------------------------------------------*/
+
+/*jsHint Configuration: the nex code line tes to jsHint code validator to ignore some of the rules to javascript development*/
+//jshint -W098, unused: vars, browser: true, jquery:true
+
+$(window).on('load', function () {
+  //find and run the corresponding function
+  var duration = 10000;
+  (function(){
+      var id = "banner-slider";
+      var fnName = $("#"+id).data("anmt");
+
+      var anmt = window[fnName];
+      if(typeof anmt === 'function'){
+        anmt($("#"+id),duration);
+      }
+
+  })(); 
+});
+//get the elements properties and settings needed
+function animationsSettings(elem){
+    return {
+        "li": elem.find("li"),
+        "cHeight":parseInt(elem.css("height")),
+        "cWidth":parseInt(elem.css("width"))
+    };
+  
+}
+// fucntions that crate the animations
+function upAndFade(elem,duration){
+  var time = duration;
+  var props = animationsSettings(elem,time);
+  var num = 0;
+  (function animateElements(elem){
+      var pxMiss = parseInt($(elem).css("height"))-props.cHeight;
+      var element = elem;  
+      $(element).css({top:0,zIndex:3,opacity:1});
+      ($(element).next("li")[0])?$(element).next("li").css({top:0,zIndex:2}):props.li.first("li").css({top:0,zIndex:2});
+      if(pxMiss>0){
+        $(element).animate({top:"-"+pxMiss},(time-1000),function(){
+          $(this).animate({opacity:0},1000,function(){
+            $(this).removeAttr("style");
+            ($(element).next("li")[0])?$(this).next("li").removeAttr("style"):props.li.first("li").removeAttr("style");
+            num++;
+            if(num==(props.li.length)){num = 0;}
+            animateElements(props.li[num]);
+          });
+        });
+      }
+    })(props.li[num]);
+}
+//--------------//
+function FadeInOut(elem,duration){
+  var time = duration;
+  var props = animationsSettings(elem,time);
+  var num = 0;
+  (function animateElements(elem){
+      var element = elem; 
+      $(element).css({opacity:1,zIndex:3});
+      ($(element).next("li")[0])?$(element).next("li").css({zIndex:2}):props.li.first("li").css({zIndex:2});
+      $(element).delay(time-1000).animate({opacity:0},1000,function(){
+          $(this).removeAttr("style");
+          ($(element).next("li")[0])?$(this).next("li").removeAttr("style"):props.li.first("li").removeAttr("style");
+          num++;
+          if(num==(props.li.length)){num = 0;}
+          animateElements(props.li[num]);
+      });
+    })(props.li[num]);
+}
+//--------------//
+function diagUpAndFade(elem,duration){
+  var time = 7000;
+  var props = animationsSettings(elem,time);
+  var num = 0;
+  elem.addClass("diag");
+  (function animateElements(elem){
+      var pxMiss = [parseInt($(elem).css("height"))-props.cHeight,parseInt($(elem).css("width"))-props.cWidth];
+      var element = elem;  
+      var orientation = (num%2 === 0)?{left:"-"+pxMiss[1],top:"-"+pxMiss[0]}:{right:"-"+pxMiss[1],top:"-"+pxMiss[0]};
+      var initStl = (num%2 === 0)?{right:0,top:0,zIndex:2}:{top:0,zIndex:2};
+      $(element).css({top:0,zIndex:3,opacity:1});
+      ($(element).next("li")[0])?$(element).next("li").css(initStl):props.li.first("li").css(initStl);
+      if(pxMiss[0]>0){
+        $(element).animate(orientation,(time-1000),"linear",function(){
+          $(this).animate({opacity:0},1000,function(){
+            $(this).removeAttr("style");
+            ($(element).next("li")[0])?$(this).next("li").removeAttr("style"):props.li.first("li").removeAttr("style");
+            num++;
+            if(num==(props.li.length)){num = 0;}
+            animateElements(props.li[num]);
+          });
+        });
+      }
+    })(props.li[num]);
+}
+//----------------//
+function slideLeft(elem,duration){
+  var time = 10000;
+  var transition = 1500;
+  var props = animationsSettings(elem,time);
+  var num = 0;
+  (function animateElements(elem){
+      var element = elem; 
+      var stlInit = {left:props.cWidth,zIndex:2};
+      var nextElem = ($(element).next("li")[0])?$(element).next("li"):props.li.first("li");
+      $(element).css({left:0,zIndex:3});
+      nextElem.css(stlInit);
+      nextElem.delay(time-transition).animate({left:0},transition);
+      $(element).delay(time-transition).animate({left:-props.cWidth},transition,function(){
+          $(this).removeAttr("style");
+          ($(element).next("li")[0])?$(this).next("li").removeAttr("style"):props.li.first("li").removeAttr("style");
+          num++;
+          if(num==(props.li.length)){num = 0;}
+          animateElements(props.li[num]);
+      });
+    })(props.li[num]);
+}
